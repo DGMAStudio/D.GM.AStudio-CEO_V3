@@ -1,0 +1,213 @@
+/*Customization for Section Header*/
+#Header {
+    height:100vh;
+    display:flex;
+    flex-wrap: wrap;
+    background: linear-gradient(220deg, #49108b, #7e30e1, #ef4040);
+    background-size: 600% 600%;
+    position: relative;
+    justify-content: center;
+
+    -webkit-animation: Header-Background 27s ease infinite;
+    -moz-animation: Header-Background 27s ease infinite;
+    animation: Header-Background 27s ease infinite;
+}
+
+.hd-n-div {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.HD-N-H {
+    color:aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.AbBut {
+    color:aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.SkBut {
+    color:aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.ConBut {
+    color:aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.head-nav {
+    height:10vh;
+}
+
+
+.hd-name {
+    color:aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 100px;
+    letter-spacing: 2px;
+}
+
+.hd-par {
+    color:aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:35px;
+    letter-spacing: 2px;
+}
+
+@-webkit-keyframes Header-Background {
+    0%{background-position:99% 0%}
+    50%{background-position:2% 100%}
+    100%{background-position:99% 0%}
+}
+@-moz-keyframes Header-Background {
+    0%{background-position:99% 0%}
+    50%{background-position:2% 100%}
+    100%{background-position:99% 0%}
+}
+@keyframes Header-Background {
+    0%{background-position:99% 0%}
+    50%{background-position:2% 100%}
+    100%{background-position:99% 0%}
+}
+
+.hd-name-n {
+    text-decoration: underline;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
+}
+
+@media(max-width:320px) {
+    .hd-n-div {
+        font-size:20px;
+    }
+}
+
+/*Customization for Section Me*/
+
+#Me {
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center ;
+    flex-wrap: wrap;
+    background-color:white;
+}
+
+.Me-H1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:bold;
+    font-size:60px;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+/*Customization for Attributes*/
+
+#Attributes {
+    height:100vh;
+    background-color:whitesmoke;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.Att-Ti {
+    font-family: 'Josefin Sans', sans-serif;
+    background: -webkit-linear-gradient(#EF4040, #711DB0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:60px;
+    font-weight:bold;
+}
+
+/*Customization for Contact*/
+
+#Contact {
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:white;
+}
+
+.conb-c {
+    animation: conbutton 5s ease 1s infinite normal forwards;
+}
+
+.Con-A {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:140px;
+}
+
+@keyframes conbutton {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 0;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+/*Customization for Footer*/
+
+#Footer {
+    height:20vh;
+    background: linear-gradient(220deg, #49108b, #7e30e1, #ef4040);
+    background-size: 600% 600%;
+    position: relative;
+    justify-content: center;
+
+    -webkit-animation: Header-Background 27s ease infinite;
+    -moz-animation: Header-Background 27s ease infinite;
+    animation: Header-Background 27s ease infinite;
+}
+
