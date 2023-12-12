@@ -6,7 +6,7 @@
         <link rel="icon" type="image/x-icon" href="./Images/D_GM_A_Favicon.png">
         <meta charset="utf-8">
         <link rel="stylesheet" href="./Styles/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta name= "description" content= "Giwrgos Mpaos is the founder and CEO of D.GM.A Studio, a versatile agency that provides
         a spectrum of services, including social media marketing, web development, 
         and expert graphic design for compelling advertisements.">  
@@ -104,9 +104,11 @@
                             More
                           </button>
                     </a>
-                    <button class="btn btn-dark btn-lg px-4 rounded-pill" type="button">
-                      Contact Me
-                    </button>
+                    <a href="#Contact">
+                      <button class="btn btn-dark btn-lg px-4 rounded-pill" type="button">
+                        Contact Me
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -124,9 +126,9 @@
 
         <section id="Attributes">
 
-            <div class="container px-4 py-5" id="hanging-icons">
+            <div class="container px-4 py-5 revealing" id="hanging-icons">
 
-                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 bg-body-tertiary rounded-3 p-5 text-center" style="height:500px; 
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 bg-body-tertiary rounded-3 p-5 text-center" style="height:700px; 
                 display:flex; justify-content:space-evenly; align-items: center; flex-wrap: wrap; ">
                   <div class="col d-flex align-items-start">
                     <div>
@@ -178,7 +180,7 @@
             <div class="px-4 py-5 my-5 text-center">
                 <h1 class="display-5 fw-bold text-body-emphasis conb-c">
                     <a href="mailto:giwrgosmpaos@gmail.com">
-                        <button type="button" class="btn btn-dark" style="border-radius: 20px;"><span class="Con-A">Contact Me</span></button>
+                        <button type="button" class="btn btn-dark button-Con" style="border-radius: 20px;"><span class="Con-A">Contact Me</span></button>
                     </a>
                 </h1>
                 <div class="col-lg-6 mx-auto">
@@ -252,6 +254,24 @@
     }
 
       window.addEventListener("scroll", reveal);
+
+      function reveal2() {
+        var reveals = document.querySelectorAll(".revealing");
+
+        for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+      window.addEventListener("scroll", reveal2);
     </script>
 
 
